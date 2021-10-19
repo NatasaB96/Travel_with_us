@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700,900");
+/**************************************   
+M I X I N S
+***************************************/
+/**************************************   
+B A S I C   S T Y L E
+***************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+ul {
+  list-style: none; }
+
+/**************************************   
+H E A D E R
+***************************************/
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  opacity: .9; }
+  @media (max-width: 768px) {
+    header {
+      width: 100%; } }
+  header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+    header nav .logo {
+      font-size: 2rem;
+      font-weight: 700;
+      font-family: 'Montserrat';
+      margin-left: 40px; }
+      @media (max-width: 768px) {
+        header nav .logo {
+          margin-left: 0px;
+          margin-bottom: 10px; } }
+    header nav ul {
+      display: flex;
+      flex-wrap: wrap; }
+      header nav ul li {
+        margin: 0 40px; }
+        @media (max-width: 768px) {
+          header nav ul li {
+            margin: 0;
+            margin-right: 20px; } }
+        header nav ul li a {
+          text-transform: uppercase;
+          font-weight: 600; }
+  header hgroup {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white; }
+    header hgroup h1 {
+      font-size: 3rem;
+      position: relative;
+      left: -20px; }
+    header hgroup hr {
+      border: none;
+      height: 4px;
+      width: 120px;
+      background: white;
+      margin: 20px 0;
+      position: relative;
+      left: -20px; }
+    header hgroup p {
+      font-size: 1.1rem; }
+
+/**************************************  
+O N E
+***************************************/
+.one .row {
+  display: flex;
+  flex-wrap: wrap; }
+  .one .row .wrapper h4 {
+    font-size: 1.1rem; }
+  .one .row .wrapper p {
+    line-height: 1.5; }
+.one .row1 .text {
+  background: #51CCA8;
+  flex: 7;
+  display: flex;
+  flex-wrap: wrap;
+  color: white; }
+  @media (max-width: 768px) {
+    .one .row1 .text {
+      flex: 0 0 100%; } }
+  .one .row1 .text h3 {
+    flex: 5;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+    font-style: italic;
+    line-height: 1.4;
+    text-transform: uppercase;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    left: 80px; }
+    @media (max-width: 768px) {
+      .one .row1 .text h3 {
+        flex: 4;
+        left: 200px; } }
+  .one .row1 .text .wrapper {
+    background: white;
+    flex: 7;
+    height: 280px;
+    margin: auto;
+    position: relative;
+    left: 200px;
+    padding: 30px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    color: black; }
+    @media (max-width: 768px) {
+      .one .row1 .text .wrapper {
+        left: -100px;
+        top: 200px;
+        flex: 8; } }
+  .one .row1 .text button {
+    padding: 10px 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.1rem;
+    color: white;
+    margin: 20px 0;
+    background: #51CCA8; }
+    .one .row1 .text button:hover {
+      cursor: pointer;
+      transition: 0.4s ease; }
+.one .row1 .image-bg {
+  background-image: url(img/section-one.jpg);
+  flex: 5;
+  background-position: center;
+  background-size: cover;
+  height: 60vh; }
+  @media (max-width: 768px) {
+    .one .row1 .image-bg {
+      flex: 0 0 100%; } }
+.one .row2 .text {
+  background: #51B9CC;
+  flex: 7;
+  display: flex;
+  flex-wrap: wrap;
+  color: white; }
+  @media (max-width: 768px) {
+    .one .row2 .text {
+      flex: 0 0 100%; } }
+  .one .row2 .text h3 {
+    flex: 5;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+    font-style: italic;
+    line-height: 1.4;
+    text-transform: uppercase;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    left: 250px; }
+    @media (max-width: 768px) {
+      .one .row2 .text h3 {
+        flex: 4;
+        left: 200px; } }
+  .one .row2 .text .wrapper {
+    background: white;
+    flex: 7;
+    height: 280px;
+    margin: auto;
+    position: relative;
+    right: 500px;
+    padding: 30px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    color: black; }
+    @media (max-width: 768px) {
+      .one .row2 .text .wrapper {
+        flex: 8;
+        left: -100px;
+        top: 200px; } }
+  .one .row2 .text button {
+    padding: 10px 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.1rem;
+    color: white;
+    margin: 20px 0;
+    background: #51B9CC; }
+    .one .row2 .text button:hover {
+      cursor: pointer;
+      transition: 0.4s ease; }
+.one .row2 .image-bg {
+  background-image: url(img/section-two.jpg);
+  flex: 5;
+  background-position: center;
+  background-size: cover;
+  height: 60vh; }
+  @media (max-width: 768px) {
+    .one .row2 .image-bg {
+      flex: 0 0 100%;
+      order: 2; } }
+.one .row1:last-child .text {
+  background: #5E92CC; }
+  .one .row1:last-child .text .wrapper button {
+    background: #5E92CC; }
+.one .row1:last-child .image-bg {
+  background-image: url(img/section-three.jpg);
+  flex: 5;
+  background-position: center;
+  background-size: cover;
+  height: 60vh; }
+  @media (max-width: 768px) {
+    .one .row1:last-child .image-bg {
+      flex: 0 0 100%; } }
+
+/**************************************  
+T W O
+***************************************/
+.two {
+  background: #6E81D0; }
+  .two .wrapper {
+    padding: 40px 80px; }
+    .two .wrapper .image {
+      background-image: url(img/section-four.jpg);
+      background-position: center;
+      background-size: cover;
+      height: 60vh; }
+    .two .wrapper .text {
+      background: white;
+      text-align: center;
+      color: black;
+      padding: 40px 0; }
+      .two .wrapper .text h2 {
+        font-size: 2rem; }
+      .two .wrapper .text button {
+        padding: 10px 50px;
+        border-radius: 10px;
+        border: none;
+        font-size: 1.1rem;
+        color: white;
+        margin: 20px 0;
+        background: #6E81D0; }
+        .two .wrapper .text button:hover {
+          cursor: pointer;
+          transition: 0.4s ease; }
+
+/**************************************  
+T H R E E
+***************************************/
+.three {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .three article {
+    margin: 20px;
+    flex: 0 0 30%;
+    border: 1px solid lightgray; }
+    @media (max-width: 768px) {
+      .three article {
+        flex: 0 0 100%;
+        margin: 0; } }
+    .three article .image img {
+      width: 100%; }
+    .three article .text {
+      text-align: center;
+      padding: 20px; }
+      .three article .text h4 {
+        font-size: 1.4rem;
+        margin-bottom: 10px; }
+      .three article .text button {
+        padding: 10px 50px;
+        border-radius: 10px;
+        border: none;
+        font-size: 1.1rem;
+        color: white;
+        margin: 20px 0;
+        background: #6E81D0; }
+        .three article .text button:hover {
+          cursor: pointer;
+          transition: 0.4s ease; }
+
+/**************************************  
+F O U R
+***************************************/
+.four {
+  padding: 20px 0;
+  background: #51CCA8;
+  color: white;
+  text-align: center; }
+  .four h2 {
+    text-transform: uppercase;
+    font-size: 1.5rem; }
+  .four p {
+    margin: 10px 0; }
+  .four form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .four form textarea {
+      height: 40px;
+      width: 250px; }
+    .four form button {
+      padding: 10px 50px;
+      border-radius: 10px;
+      border: none;
+      font-size: 1.1rem;
+      color: white;
+      margin: 20px 0;
+      border-radius: 0;
+      margin: 0;
+      color: black;
+      position: relative;
+      right: -5px; }
+      .four form button:hover {
+        cursor: pointer;
+        transition: 0.4s ease; }
+
+/**************************************  
+F O O T E R
+***************************************/
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  @media (max-width: 768px) {
+    footer {
+      justify-content: space-between; } }
+  footer .col {
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+    @media (max-width: 768px) {
+      footer .col {
+        padding: 10px 0;
+        font-size: .8rem; } }
+
+/*# sourceMappingURL=style.css.map */

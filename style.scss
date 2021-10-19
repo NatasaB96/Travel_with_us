@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700,900');
+
+$zelena:#51CCA8;
+$svetloPlava:#51B9CC;
+$plava :#5E92CC ;
+$ljubicasta:#6E81D0 ;
+$transition: .4s ease;
+
+/**************************************   
+M I X I N S
+***************************************/
+
+@mixin btn{
+    padding: 10px 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.1rem;
+    color: rgb(255,255,255);
+    margin: 20px 0;
+    &:hover{
+        cursor: pointer;
+        transition: $transition;
+    }
+}
+
+/**************************************   
+B A S I C   S T Y L E
+***************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255,255,255);
+}
+
+ul{
+    list-style: none;
+}
+
+
+/**************************************   
+H E A D E R
+***************************************/
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    opacity: .9;
+    @media(max-width:768px){
+        width: 100%;
+    }
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            font-size: 2rem;
+            font-weight: 700;
+            font-family: 'Montserrat';
+            margin-left: 40px;
+            @media(max-width:768px){
+                margin-left: 0px; 
+                margin-bottom: 10px;
+            }
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                margin: 0 40px;
+                 @media(max-width:768px){
+                     margin:0;
+                     margin-right: 20px;
+       
+                 }    
+                a{
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    hgroup{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        color: rgb(255,255,255);
+        h1{
+            font-size: 3rem;
+            position: relative;
+            left: -20px;
+        }
+        hr{
+            border: none;
+            height: 4px;
+            width: 120px;
+            background: rgb(255,255,255);
+            margin: 20px 0;
+            position: relative;
+            left: -20px;
+        }
+        p{
+            font-size: 1.1rem;
+        }
+    }
+    
+}
+
+/**************************************  
+O N E
+***************************************/
+
+.one{
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        
+        .wrapper {
+            h4{
+                font-size: 1.1rem;
+            }
+            p{
+                line-height: 1.5;
+            }
+        }
+    }
+    .row1{
+        .text{
+            background: $zelena;
+            flex: 7;
+            display: flex;
+            flex-wrap: wrap;
+            color: rgb(255,255,255);
+            @media(max-width:768px){
+                flex: 0 0 100%;
+            }
+            h3{
+                flex: 5;
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 1.4rem;
+                font-style: italic;
+                line-height: 1.4;
+                text-transform: uppercase;
+                justify-content: flex-end;
+                align-items: center;
+                position: relative;
+                left: 80px;
+                @media(max-width:768px){
+        
+                    flex:4;
+                    left: 200px;
+                }
+            
+            }
+            .wrapper{
+                background: rgb(255,255,255);
+                flex: 7;
+                height: 280px;
+                margin: auto;
+                position: relative;
+                left: 200px;
+                padding: 30px;
+                border-radius: 5px;
+                border: 1px solid gray;
+                color: rgb(0,0,0);
+                @media(max-width:768px){
+                    left: -100px;
+                    top: 200px;
+                    flex: 8;
+                }
+              
+            }
+            button{
+                @include btn;
+                background: $zelena;
+            }
+        }
+        .image-bg{
+            background-image: url(img/section-one.jpg);
+            flex: 5;
+            background-position: center;
+            background-size: cover;
+            height: 60vh;
+            @media(max-width:768px){
+                flex: 0 0 100%;
+            }
+        }
+        
+    }
+    .row2{
+        .text{
+            background: $svetloPlava;
+            flex: 7;
+            display: flex;
+            flex-wrap: wrap;
+            color: rgb(255,255,255);
+            @media(max-width:768px){
+                flex: 0 0 100%;
+            }
+            h3{
+                flex: 5;
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 1.4rem;
+                font-style: italic;
+                line-height: 1.4;
+                text-transform: uppercase;
+                justify-content: flex-end;
+                align-items: center;
+                position: relative;
+                left: 250px;
+                @media(max-width:768px){
+                    flex: 4;
+                    left: 200px;
+               
+                }
+            
+            }
+            .wrapper{
+                background: rgb(255,255,255);
+                flex: 7;
+                height: 280px;
+                margin: auto;
+                position: relative;
+                right: 500px;
+                padding: 30px;
+                border-radius: 5px;
+                border: 1px solid gray;
+                color: rgb(0,0,0);
+                @media(max-width:768px){
+                    flex: 8;
+                    left: -100px;
+                    top: 200px;
+                }
+               
+            }
+            button{
+                @include btn;
+                background: $svetloPlava;
+            }
+        }
+        .image-bg{
+              background-image: url(img/section-two.jpg);
+              flex: 5;
+              background-position: center;
+              background-size: cover;
+              height: 60vh;
+              @media(max-width:768px){
+                flex: 0 0 100%;
+                order: 2;
+               
+              }
+             
+        }
+    }
+    .row1:last-child{
+        .text{
+            background: $plava;
+            .wrapper{
+                button{
+                    background: $plava;
+                    
+                }
+            }
+        }
+        .image-bg{
+            background-image: url(img/section-three.jpg);
+            flex: 5;
+            background-position: center;
+            background-size: cover;
+            height: 60vh;
+            @media(max-width:768px){
+                flex: 0 0 100%;
+    
+            }
+        }
+    }
+
+}
+
+/**************************************  
+T W O
+***************************************/
+.two{
+    background: $ljubicasta;
+    .wrapper{
+        padding: 40px 80px;
+        .image{
+            background-image: url(img/section-four.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 60vh;
+        }
+        .text{
+            background: rgb(255,255,255);
+            text-align: center;
+            color: rgb(0,0,0);
+            padding: 40px 0;
+            h2{
+                font-size: 2rem;
+            }
+            button{
+                @include btn;
+                background: $ljubicasta;
+            }
+        }
+    }
+    
+}
+
+/**************************************  
+T H R E E
+***************************************/
+
+.three{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    article{
+        margin: 20px;
+        flex: 0 0 30%;
+        border: 1px solid lightgray;
+        @media(max-width:768px){
+            flex: 0 0 100%;
+            margin: 0;
+        }
+        .image{
+            img{
+                width: 100%;
+            }
+        }
+        .text{
+            text-align: center;
+            padding: 20px;
+            h4{
+               font-size: 1.4rem;
+                margin-bottom: 10px; 
+            }
+            button{
+                @include btn;
+                background: $ljubicasta;
+            }
+        }
+    }
+}
+
+/**************************************  
+F O U R
+***************************************/
+.four{
+    padding: 20px 0;
+    background: $zelena;
+    color: rgb(255,255,255);
+    text-align: center;
+    h2{
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+    p{
+        margin: 10px 0;
+    }
+    form{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center; 
+        flex-wrap: wrap;
+       
+        textarea{
+            height: 40px;
+            width: 250px;
+         
+        }
+        button{
+            @include btn;
+            border-radius: 0;
+            margin: 0;
+            color: rgb(0,0,0);
+            position: relative;
+            right: -5px;
+            
+        }
+    }
+}
+
+/**************************************  
+F O O T E R
+***************************************/
+    
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    @media(max-width:768px){
+            justify-content: space-between;
+    }
+    
+    .col{
+         padding: 40px 0;
+         display: flex;
+         flex-wrap: wrap;
+         align-items: center;
+         @media(max-width:768px){
+            padding: 10px 0;
+            font-size: .8rem;
+         }
+    }
+}
+
